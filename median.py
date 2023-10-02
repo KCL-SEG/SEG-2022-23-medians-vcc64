@@ -1,4 +1,6 @@
 """Median calculator."""
+import math
+
 """ENTER YOUR SOLUTION HERE!"""
 
 while True:
@@ -9,4 +11,13 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+if len(numbers)%2 == 0:
+    middlePoint = int(len(numbers)/2)
+    median = (numbers[middlePoint] + numbers[middlePoint+1])/2
+else:
+    middlePoint = math.floor(len(numbers)/2)
+    median = numbers[middlePoint]
+
+print(median)
+
