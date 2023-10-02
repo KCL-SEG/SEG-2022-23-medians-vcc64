@@ -12,6 +12,8 @@ while True:
     else:
         break
 
+numbers = sorted(numbers)
+
 if len(numbers)%2 == 0:
     middlePoint = int(len(numbers)/2)
     median = (numbers[middlePoint] + numbers[middlePoint+1])/2
